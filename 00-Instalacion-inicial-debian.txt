@@ -15,6 +15,11 @@ apt install lm-sensors -y
 vim /etc/hostname
 vim /etc/hosts
 
+# configurar dns 
+cat /etc/resolv.conf
+    nameserver 8.8.8.8
+    nameserver 8.8.4.4
+
 # Configuro .bashrc (técnica/grisácea)
 vim ~/.bashrc
 -------------------------------------------------------------------------------------------
