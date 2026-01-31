@@ -72,17 +72,17 @@ declare -A IP_MAP=(
     ["192.168.1.137"]="IPHONE"
 )
 
-STATUS_FILE="/var/lib/aptelliot/ip_status.txt"
+STATUS_FILE="/var/lib/mointor/ip_status.txt"
 LOG_FILE="/var/log/monitor.log"
 
 ### === CONFIGURACIÓN DEL CORREO === ###
 GMAIL_USER="de@gmail.com"
 DESTINO="a@gmail.com"
-ASUNTO="🪖📩  Cambio de estado de IP"
+ASUNTO="🌑 Cambio de estado de IP"
 REMITENTE="no-reply@autoscript.local"
 
 # Inicializar archivos
-mkdir -p /var/lib/aptelliot
+mkdir -p /var/lib/monitor
 touch "$STATUS_FILE" "$LOG_FILE"
 
 ### === FUNCIONES === ###
@@ -142,7 +142,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/aptelliot/monitor.sh
+ExecStart=/etc/monitor/monitor.sh
 Restart=always
 
 # Ejecuta el script cada 60 segundos tras fallo/restart
