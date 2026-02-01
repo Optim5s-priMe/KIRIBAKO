@@ -348,6 +348,8 @@ systemctl restart iptables
 apt install -y openssh-server
 # Evitar suspensión en el contenedor
 systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+# compruebo
+systemctl status sleep.target suspend.target hibernate.target
 vim /etc/ssh/sshd_config
 -------------------------------------------------------------------------------------------
 ...
