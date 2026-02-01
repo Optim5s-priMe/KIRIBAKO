@@ -116,6 +116,9 @@ https://github.com/qbittorrent/search-plugins/wiki/Unofficial-search-plugins
 | Torrent Downloads Pro     | 4.6.x      | 3.9.x  | Inglés, contenido reciente y confiable                                                         |
 | MaxiTorrent               | 4.3.x      | 3.5.0  | Inglés, películas y series antiguas y recientes                                                |
 +---------------------------+------------+--------+------------------------------------------------------------------------------------------------+
+# ⚠️ Al agregar los nombres de lso archivos .py siempre en minúsculas porque no los admite en mayúsculas
+# ⚠️ Los archivos sde guardan siempre en 
+/home/qbittorrent/.local/share/qBittorrent/nova3/engines 
 
 # configuro buscador
 search > search plugin > check for updates
